@@ -1,0 +1,53 @@
+{
+  "name": "ezvcard-ts-java-types",
+  "version": "1.0.0",
+  "description": "Ezvcard TypeScript type definitions for node-java",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "preinstall": "npm run npm-force-resolutions",
+    "npm-force-resolutions": "npm-force-resolutions"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^3.2.0",
+    "nan": "^2.14.1",
+    "npm": "^6.14.7",
+    "npm-force-resolutions": "0.0.3",
+    "ts-java": "^1.4.1"
+  },
+  "resolutions": {
+    "java": "github:joeferner/node-java#master",
+    "find-java-home": "1.1.0"
+  },
+  "tsjava": {
+    "tsJavaModulePath": "./tsJavaModule.ts",
+    "classpath": [
+      "rt.jar",
+      "C:\\Users\\maxim\\.m2\\repository\\com\\googlecode\\ez-vcard\\ez-vcard\\0.10.6\\ez-vcard-0.10.6.jar",
+      "C:\\Users\\maxim\\.m2\\repository\\com\\github\\mangstadt\\vinnie\\2.0.2\\vinnie-2.0.2.jar",
+      "C:\\Users\\maxim\\.m2\\repository\\org\\jsoup\\jsoup\\1.13.1\\jsoup-1.13.1.jar",
+      "C:\\Users\\maxim\\.m2\\repository\\org\\freemarker\\freemarker\\2.3.30\\freemarker-2.3.30.jar",
+      "C:\\Users\\maxim\\.m2\\repository\\com\\fasterxml\\jackson\\core\\jackson-core\\2.10.3\\jackson-core-2.10.3.jar"
+    ],
+    "packages": [
+      "ezvcard.*"
+    ],
+    "classes": [
+      "ezvcard.Ezvcard",
+      "ezvcard.parameter.AddressType",
+      "ezvcard.parameter.ImageType",
+      "ezvcard.parameter.TelephoneType",
+      "ezvcard.property.Address",
+      "ezvcard.property.Birthday",
+      "ezvcard.property.Photo",
+      "ezvcard.property.Revision",
+      "ezvcard.property.StructuredName",
+      "ezvcard.property.Timezone",
+      "ezvcard.property.Uid",
+      "ezvcard.VCard",
+      "ezvcard.VCardVersion"
+    ]
+  }
+}
