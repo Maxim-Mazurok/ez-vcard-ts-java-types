@@ -39,3 +39,25 @@
 1. Don't wait for `ts-java.js` to finish, it will never finish for some reason. Instead, look for `tsJavaModule.ts` file to be created or updated. Once it's there - terminate script.
 1. ???
 1. Profit!
+
+### Usage with node-java instructions:
+
+1. See [`usage`](./usage/) folder
+1. Make sure to replace
+
+   ```js
+   var fullJarPath: string = path.join(__dirname, "", jarPath);
+   _java.classpath.push(fullJarPath);
+   ```
+
+   with
+
+   ```js
+   _java.classpath.push(jarPath);
+   ```
+
+   in case if you're using absolute paths to your `jar`s.
+
+1. Don't forget to switch back to the latest NodeJS version (tested on `v14.7.0`) since we don't have to deal with outdated `ts-java` sources anymore
+1. Install deps from [`package.json`](./usage/package.json)
+1. Run `npx ts-node .\index.ts`
