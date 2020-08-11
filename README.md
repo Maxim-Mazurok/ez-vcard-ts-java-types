@@ -25,7 +25,7 @@
 1. Run `npm i --ignore-scripts` to generate `package-lock.json`
 1. Remove `node_modules/java` and `node_modules/ts-java` (to force reinstallation and re-running of build scripts)
 1. Run `npm i --python=C:\Python27\python.exe`
-1. In `node_modules\ts-java\lib\ts-java-main.js` remove `classpath.push(rtJarPath);` line. Instead, we'll download and add it to `package.json`. Make sure that it's a full and not stripped down version, use archive manager to look inside of jar, there should be a lot of folders. Or, grad one from this repo.
+1. In `node_modules\ts-java\lib\ts-java-main.js` remove `classpath.push(rtJarPath);` line. Instead, we'll download and add it to `package.json`. Make sure that it's a full and not stripped down version, use archive manager to look inside of jar, there should be a lot of folders. Or, grab one from this repo.
 
    ```json
    {
