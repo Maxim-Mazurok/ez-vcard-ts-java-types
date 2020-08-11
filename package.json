@@ -9,7 +9,7 @@
     "npm-force-resolutions": "npm-force-resolutions"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "async": "^3.2.0",
     "nan": "^2.14.1",
